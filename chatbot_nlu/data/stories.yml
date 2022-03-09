@@ -1,0 +1,42 @@
+version: "3.0"
+
+stories:
+
+- story: get to know
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_asktoknow
+  - intent: affirm
+  - action: utter_aboutuser_name
+  - intent: aboutuser_name
+  - action: utter_username_response
+  - action: utter_aboutuser_age
+  - intent: aboutuser_age
+  - action: utter_userage_response
+
+- story: about bot name
+  steps:
+  - intent: aboutbot_name
+  - action: utter_botname
+
+- story: about bot age
+  steps:
+  - intent: aboutbot_age
+  - action: utter_botage
+
+- story: bot is annoying
+  steps:
+  - intent: botannoying
+  - action: utter_botannoying
+
+- story: bot didnt answer
+  steps:
+  - intent: answerme
+  - action: utter_answerme
+
+- story: bot is beautiful
+  steps:
+  - intent: botbeautiful
+  - action: utter_botbeautiful
+
