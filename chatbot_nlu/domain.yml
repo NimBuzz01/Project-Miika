@@ -5,17 +5,20 @@ intents:
   - goodbye
   - affirm
   - deny
-  - about_bot
+  - aboutbot_name
+  - aboutbot_age
   - aboutuser_name
   - aboutuser_age
   - botannoying
   - answerme
   - badbot
   - botbeautiful
+  - inquiretime
 
 entities:
   - name
   - age
+  - place
 
 slots:
   name:
@@ -91,6 +94,10 @@ responses:
     - text: "Why, thank you."
     - text: "Aw, back at you."
     - text: "Aw. You smooth talker, you."
+
+
+actions:
+- action_telltime
 
 session_config:
   session_expiration_time: 60
