@@ -7,7 +7,6 @@ stories:
   - intent: greet
   - action: utter_greet
   - action: utter_asktoknow
-  - intent: affirm
   - action: utter_aboutuser_name
   - intent: aboutuser_name
   - action: utter_username_response
@@ -40,3 +39,7 @@ stories:
   - intent: botbeautiful
   - action: utter_botbeautiful
 
+- story: tell the time
+  steps:
+  - intent: inquiretime
+  - action: action_telltime

@@ -237,4 +237,21 @@ nlu:
     - you're looking good
     - you're pretty
 
+- intent: inquiretime
+  examples: |
+    - what time is it?
+    - what time is it in [London](place)
+    - what time is it in [Sri Lanka](place)
+    - what is the current time in [India](place)
+    - tell me the time in [Japan](place)
+    - what time is it in [Colombo](place)
+- lookup: place
+  examples: |
+    - london
+    - sri lanka
+    - srilanka
+    - kandy
+    - colombo
+    - india
+
 
