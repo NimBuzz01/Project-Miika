@@ -14,29 +14,40 @@ intents:
   - badbot
   - botbeautiful
   - inquiretime
+  - usermood
 
 entities:
   - name
   - age
   - place
+  - sad
+  - happy
 
 slots:
   name:
     type: text
-    # this slot will not influence the predictions
-    # of the dialogue policies
     influence_conversation: false
     mappings:
     - type: from_entity
       entity: name
   age:
     type: text
-    # this slot will not influence the predictions
-    # of the dialogue policies
     influence_conversation: false
     mappings:
       - type: from_entity
         entity: age
+  happy:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: happy
+  sad:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: sad
 
 responses:
   utter_greet:
@@ -94,6 +105,14 @@ responses:
     - text: "Why, thank you."
     - text: "Aw, back at you."
     - text: "Aw. You smooth talker, you."
+
+  utter_happymood:
+    - text: "Can I Ask Why u are Happy?"
+    - text: "Why are you happy?"
+
+  utter_sadmood:
+    - text: "Can I Ask Why u are Sad?"
+    - text: "Why are you sad?"
 
 
 actions:

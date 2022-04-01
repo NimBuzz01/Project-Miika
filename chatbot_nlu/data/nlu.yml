@@ -96,11 +96,11 @@ nlu:
     - My Name is [Niamat](name)
     - My name is [Hakkam](name)
     - Im [Sachindu](name)
-    - [Poori](name)
-    - my name is [apoorva](name)
+    - [David](name)
+    - my name is [John](name)
     - name [Poori](name)
-    - My Name is [zeke](name)
-    - My NAME is [john](name)
+    - My Name is [Sachindu](name)
+    - My NAME is [manulji](name)
     - Im [karen](name)
     - [Juste](name)
     - my name is [kanye](name)
@@ -237,6 +237,13 @@ nlu:
     - you're looking good
     - you're pretty
 
+- intent: usermood
+  examples: |
+    - im [sad](sad)
+    - im [happy](happy)
+    - i feel [sad](sad)
+    - i feel [happy](happy)
+
 - intent: inquiretime
   examples: |
     - what time is it?
@@ -253,5 +260,6 @@ nlu:
     - kandy
     - colombo
     - india
+
 
 
